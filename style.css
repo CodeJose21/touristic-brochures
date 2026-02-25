@@ -259,7 +259,10 @@ select{
 }
 
 /* Sections */
-.section-head{ margin-top: 18px; }
+.section-head{
+  background: transparent;
+  padding: 6px 0 12px;
+}
 .section-head h3{ margin: 0 0 4px; font-size: 18px; color: var(--accent2); }
 .section-head p{ margin:0; color: var(--muted); }
 
@@ -271,12 +274,15 @@ select{
 }
 
 .card{
-  margin-top: 16px;
-  background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
-  border-radius: var(--radius);
-  padding: 16px;
+  background: #0b0b0b;              /* negro puro */
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.5);
+}
+
+#other{
+  background:#0b0b0b;
 }
 
 .card h3{ margin: 0 0 8px; font-size: 18px; color: var(--accent2); }
