@@ -1,0 +1,1001 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rincón de la Victoria · Guía</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <img class="brand-logo" src="assets/logo-cabecera.png" alt="Rincón de la Victoria" />
+        <div>
+          <p class="kicker" data-i18n="brandKicker">Guía de viaje</p>
+          <h1 data-i18n="brandTitle">Rincón de la Victoria</h1>
+          <p class="subtitle" data-i18n="brandSubtitle">Historia, cultura y lugares imprescindibles</p>
+        </div>
+      </div>
+
+      <div class="tools">
+        <label class="sr-only" for="lang">Idioma</label>
+        <select id="lang">
+          <option value="es">Español</option>
+          <option value="en">English</option>
+          <option value="fr">Français</option>
+        </select>
+      </div>
+    </div>
+
+    <nav class="site-nav">
+      <div class="container nav-row">
+        <a href="#general" data-i18n="navGeneral">General</a>
+        <a href="#history" data-i18n="navHistory">Historia</a>
+        <a href="#people" data-i18n="navPeople">Célebres</a>
+        <a href="#attractions" data-i18n="navAttractions">Atracciones</a>
+        <a href="#gastronomy" data-i18n="navGastro">Gastronomía</a>
+        <a href="#itineraries" data-i18n="navItin">Itinerarios</a>
+        <a href="#tips" data-i18n="navTips">Consejos</a>
+        <a href="#other" data-i18n="navOther">Otros</a>
+        <a href="#contact" class="cta" data-i18n="navContact">Contratar visita</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="pill" data-i18n="heroPill">Costa del Sol · Málaga</p>
+        <h2 data-i18n="heroTitle">Playas, cuevas legendarias y patrimonio defensivo</h2>
+        <p data-i18n="heroText">
+          A pocos minutos de Málaga, Rincón de la Victoria mezcla brisa marina y paseos fáciles con planes distintos:
+          una cueva de origen marino, una fortaleza del siglo XVIII, barrios con sabor local y atardeceres que se disfrutan sin prisa.
+        </p>
+
+        <div class="hero-highlights">
+          <div class="hl">
+            <span class="hl-title" data-i18n="heroH1Title">Imprescindible</span>
+            <span class="hl-text" data-i18n="heroH1Text">Cueva del Tesoro + paseo por El Cantal</span>
+          </div>
+          <div class="hl">
+            <span class="hl-title" data-i18n="heroH2Title">Cultural</span>
+            <span class="hl-text" data-i18n="heroH2Text">Bezmiliana y su agenda de exposiciones</span>
+          </div>
+          <div class="hl">
+            <span class="hl-title" data-i18n="heroH3Title">Sabor</span>
+            <span class="hl-text" data-i18n="heroH3Text">Pescaito, espetos y helado frente al mar</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn" href="#attractions" data-i18n="heroBtn">Ver atracciones</a>
+          <a class="btn ghost" href="#itineraries" data-i18n="heroBtn3">Ver itinerarios</a>
+          <a class="btn ghost" href="#contact" data-i18n="heroBtn2">Contratar visita</a>
+        </div>
+      </div>
+
+      <figure class="hero-media">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Playa_del_Rinc%C3%B3n_de_la_Victoria.jpg"
+          alt="Playa del Rincón de la Victoria"
+          loading="lazy"
+        />
+        <figcaption data-i18n="heroCap">Playa del Rincón de la Victoria (Wikimedia Commons).</figcaption>
+      </figure>
+    </section>
+
+    <!-- GENERAL -->
+    <section id="general" class="card">
+      <h3 data-i18n="generalTitle">Información general</h3>
+      <p data-i18n="generalText1">
+        Rincón de la Victoria es un municipio costero de la provincia de Málaga, en la comarca de la Axarquía.
+        Está formado por varios núcleos (Rincón, La Cala del Moral, Benagalbón y Torre de Benagalbón), cada uno con su carácter:
+        zonas de playa muy cómodas, rincones más tranquilos y pequeñas joyas patrimoniales.
+      </p>
+      <p data-i18n="generalText2">
+        Es ideal para una escapada “sin complicaciones”: playas amplias, paseo marítimo para caminar o ir en bici, miradores,
+        y planes culturales que se pueden encadenar con un buen almuerzo junto al mar.
+      </p>
+
+      <div class="mini-grid">
+        <div class="mini">
+          <h4 data-i18n="generalBox1Title">Ambiente</h4>
+          <p data-i18n="generalBox1Text">Costero y cercano, con vida todo el año y tardes de paseo.</p>
+        </div>
+        <div class="mini">
+          <h4 data-i18n="generalBox2Title">Plan típico</h4>
+          <p data-i18n="generalBox2Text">Mañana cultural, comida marinera y atardecer en los acantilados.</p>
+        </div>
+        <div class="mini">
+          <h4 data-i18n="generalBox3Title">Para quién</h4>
+          <p data-i18n="generalBox3Text">Parejas, familias, amantes de la foto, y quien quiera mar sin prisas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORY + PEOPLE -->
+    <section class="grid">
+      <article id="history" class="card">
+        <h3 data-i18n="historyTitle">Referencias históricas</h3>
+
+        <p data-i18n="historyP1">
+          La costa malagueña ha sido un lugar estratégico: rutas marítimas, vigilancia del litoral y defensa frente a incursiones.
+          Ese contexto explica la presencia de torres vigía y fortificaciones, además del papel de los asentamientos cercanos.
+        </p>
+
+        <ul>
+          <li data-i18n="historyLi1">Bezmiliana es un nombre histórico ligado al territorio y al poblamiento local.</li>
+          <li data-i18n="historyLi2">La defensa costera se reforzó en época moderna con torres y fortificaciones para controlar el litoral.</li>
+          <li data-i18n="historyLi3">El conjunto de cuevas del municipio aporta un gran valor arqueológico y científico.</li>
+        </ul>
+
+        <p class="muted" data-i18n="historyP2">
+          Hoy ese pasado se vive en clave de paseo: miradores, arquitectura defensiva, cultura local y rutas cortas muy agradecidas.
+        </p>
+      </article>
+
+      <article id="people" class="card">
+        <h3 data-i18n="peopleTitle">Personajes célebres</h3>
+        <p class="muted" data-i18n="peopleP1">
+          Además de su atractivo turístico, el municipio ha visto nacer figuras conocidas en música, deporte y vida pública.
+        </p>
+        <ul>
+          <li data-i18n="peopleLi1"><strong>El Koala</strong>: cantante español conocido por “Opá, yo viazé un corrá”.</li>
+          <li data-i18n="peopleLi2"><strong>Francisco Salado</strong>: político nacido en el municipio.</li>
+          <li data-i18n="peopleLi3"><strong>Andrés Caro</strong>: futbolista nacido en Rincón de la Victoria.</li>
+        </ul>
+
+        <div class="quote">
+          <p data-i18n="peopleQuote">
+            “Lo mejor del Rincón es que puedes hacer un plan completo en pocas horas: cueva, cultura, playa y una cena mirando al mar.”
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ATTRACTIONS -->
+    <section id="attractions" class="section-head">
+      <h3 data-i18n="attrTitle">Atracciones</h3>
+      <p data-i18n="attrIntro">Pulsa “Ver más” para abrir el desplegable con foto, información y datos curiosos.</p>
+    </section>
+
+    <section class="accordion">
+      <!-- Carmen -->
+      <article class="acc-item">
+        <div class="acc-top">
+          <div class="acc-left">
+            <img
+              class="acc-thumb"
+              src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Casa_Fuerte_de_Bezmiliana%2C_Rinc%C3%B3n_de_la_Victoria.jpg"
+              alt="Casa Fuerte de Bezmiliana"
+              loading="lazy"
+/>
+            <div class="acc-title">
+              <h4 data-i18n="carmenTitle">Virgen de Ntra. Sra. del Carmen</h4>
+              <p class="acc-sub" data-i18n="carmenSub">Tradición marinera y devoción local junto al litoral</p>
+            </div>
+          </div>
+
+          <div class="acc-actions">
+            <a class="map" href="https://www.google.com/maps?q=Santuario+Virgen+del+Carmen+Rinc%C3%B3n+de+la+Victoria" target="_blank" rel="noopener" data-i18n="openMap">Abrir mapa</a>
+            <button class="acc-btn" type="button" aria-expanded="false" aria-controls="acc-carmen" data-i18n="seeMore">Ver más</button>
+          </div>
+        </div>
+
+        <div class="acc-panel" id="acc-carmen" hidden>
+          <div class="acc-body">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Santuario_de_la_Virgen_del_Carmen.jpg"
+              alt="Santuario de la Virgen del Carmen"
+              loading="lazy"
+            />
+            <div>
+              <h5 data-i18n="moreInfoTitle">Más información</h5>
+              <p data-i18n="carmenMore1">
+                La Virgen del Carmen está profundamente vinculada a la vida marinera. En la Costa del Sol, su presencia se nota
+                en el calendario y en la identidad del pueblo: la gente la siente “suya”, especialmente en verano.
+              </p>
+              <p data-i18n="carmenMore2">
+                Visitar este punto es una forma rápida de conectar con la tradición local: es un plan breve, pero con mucha carga
+                cultural, y combina muy bien con un paseo por el litoral y una comida en chiringuito.
+              </p>
+
+              <h5 data-i18n="whyTitle">Por qué merece la visita</h5>
+              <ul class="facts">
+                <li data-i18n="carmenWhy1">Te acerca a la vida cotidiana del municipio: costumbres, símbolos y memoria colectiva.</li>
+                <li data-i18n="carmenWhy2">Es una parada perfecta “entre planes”: corta, bonita y cerca del paseo marítimo.</li>
+              </ul>
+
+              <h5 data-i18n="funFactsTitle">Datos curiosos</h5>
+              <ul class="facts">
+                <li data-i18n="carmenFact1">El 16 de julio suele ser la fecha más señalada en muchas localidades costeras.</li>
+                <li data-i18n="carmenFact2">Es una de las devociones más extendidas en comunidades ligadas al mar.</li>
+                <li data-i18n="carmenFact3">Si te gusta la foto: al atardecer, el contraste “negro + dorado” del cielo queda espectacular.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tesoro -->
+      <article class="acc-item">
+        <div class="acc-top">
+          <div class="acc-left">
+            <img
+              class="acc-thumb"
+              src="https://upload.wikimedia.org/wikipedia/commons/1/19/Cueva_del_Tesoro_2.jpg"
+              alt="Cueva del Tesoro"
+              loading="lazy"
+            />
+            <div class="acc-title">
+              <h4 data-i18n="tesoroTitle">Cueva del Tesoro</h4>
+              <p class="acc-sub" data-i18n="tesoroSub">Geología, misterio y una visita muy diferente a la playa</p>
+            </div>
+          </div>
+
+          <div class="acc-actions">
+            <a class="map" href="https://www.google.com/maps?q=Cueva+del+Tesoro+Rinc%C3%B3n+de+la+Victoria" target="_blank" rel="noopener" data-i18n="openMap">Abrir mapa</a>
+            <button class="acc-btn" type="button" aria-expanded="false" aria-controls="acc-tesoro" data-i18n="seeMore">Ver más</button>
+          </div>
+        </div>
+
+        <div class="acc-panel" id="acc-tesoro" hidden>
+          <div class="acc-body">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/1/19/Cueva_del_Tesoro_2.jpg"
+              alt="Cueva del Tesoro"
+              loading="lazy"
+            />
+            <div>
+              <h5 data-i18n="moreInfoTitle">Más información</h5>
+              <p data-i18n="tesoroMore1">
+                La Cueva del Tesoro es uno de esos lugares que cambian el plan por completo: pasas del sol al frescor,
+                del azul del mar a una atmósfera subterránea con pasajes y salas que invitan a imaginar historias.
+              </p>
+              <p data-i18n="tesoroMore2">
+                Es una visita muy agradecida para familias y para quienes buscan algo distinto sin alejarse de la costa.
+                Normalmente, la experiencia se complementa con un paseo posterior por el entorno y una parada para comer.
+              </p>
+
+              <h5 data-i18n="whyTitle">Por qué merece la visita</h5>
+              <ul class="facts">
+                <li data-i18n="tesoroWhy1">Contraste perfecto con la playa: frescor, silencio y un paisaje “interior” muy fotogénico.</li>
+                <li data-i18n="tesoroWhy2">Mezcla de ciencia y leyenda: ideal si te gustan las historias con misterio.</li>
+              </ul>
+
+              <h5 data-i18n="funFactsTitle">Datos curiosos</h5>
+              <ul class="facts">
+                <li data-i18n="tesoroFact1">Se asocia a relatos populares sobre tesoros escondidos.</li>
+                <li data-i18n="tesoroFact2">Su origen marino la hace distinta a muchas cuevas del interior.</li>
+                <li data-i18n="tesoroFact3">Consejo de visitante: lleva una capa ligera incluso en verano por el cambio de temperatura.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Bezmiliana -->
+      <article class="acc-item">
+        <div class="acc-top">
+          <div class="acc-left">
+            <img
+              class="acc-thumb"
+              src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Castillo_Bezmiliana_2.jpg"
+              alt="Castillo Bezmiliana"
+              loading="lazy"
+            />
+            <div class="acc-title">
+              <h4 data-i18n="bezTitle">Castillo Bezmiliana (Casa Fuerte)</h4>
+              <p class="acc-sub" data-i18n="bezSub">Historia defensiva y un espacio cultural con vida</p>
+            </div>
+          </div>
+
+          <div class="acc-actions">
+            <a class="map" href="https://www.google.com/maps?q=Casa+Fuerte+Bezmiliana" target="_blank" rel="noopener" data-i18n="openMap">Abrir mapa</a>
+            <button class="acc-btn" type="button" aria-expanded="false" aria-controls="acc-bez" data-i18n="seeMore">Ver más</button>
+          </div>
+        </div>
+
+        <div class="acc-panel" id="acc-bez" hidden>
+          <div class="acc-body">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Castillo_Bezmiliana_2.jpg"
+              alt="Casa Fuerte de Bezmiliana"
+              loading="lazy"
+            />
+            <div>
+              <h5 data-i18n="moreInfoTitle">Más información</h5>
+              <p data-i18n="bezMore1">
+                La Casa Fuerte de Bezmiliana conecta con la historia de vigilancia del litoral. Su arquitectura “seria”
+                recuerda que esta costa fue frontera y ruta; hoy, en cambio, es una parada tranquila para cultura y exposiciones.
+              </p>
+              <p data-i18n="bezMore2">
+                Es un plan perfecto para equilibrar playa y patrimonio: entra, recorre con calma, y después continúa el día con paseo,
+                helado o cena cerca del mar.
+              </p>
+
+              <h5 data-i18n="whyTitle">Por qué merece la visita</h5>
+              <ul class="facts">
+                <li data-i18n="bezWhy1">Te aporta contexto histórico en 30–60 minutos, sin “romper” el ritmo de vacaciones.</li>
+                <li data-i18n="bezWhy2">Suele tener programación cultural: exposiciones, actividades y vida local.</li>
+              </ul>
+
+              <h5 data-i18n="funFactsTitle">Datos curiosos</h5>
+              <ul class="facts">
+                <li data-i18n="bezFact1">Se asocia a la estrategia defensiva del litoral en época moderna.</li>
+                <li data-i18n="bezFact2">Su uso cultural actual la mantiene viva como punto de encuentro.</li>
+                <li data-i18n="bezFact3">Si te gusta la arquitectura: fíjate en sus líneas sobrias y su sensación de fortaleza compacta.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- GASTRONOMY -->
+    <section id="gastronomy" class="card">
+      <h3 data-i18n="gastroTitle">Gastronomía con vistas al mar</h3>
+      <p data-i18n="gastroP1">
+        Aquí se viene con hambre (y con calma). Lo típico es combinar chiringuito y paseo, con platos marineros sencillos,
+        bien hechos y con ese punto de “vacaciones” que sabe mejor mirando al Mediterráneo.
+      </p>
+
+      <div class="mini-grid">
+        <div class="mini">
+          <h4 data-i18n="gastroBox1Title">Clásicos</h4>
+          <p data-i18n="gastroBox1Text">Pescaito frito, espetos y ensaladas frescas para compartir.</p>
+        </div>
+        <div class="mini">
+          <h4 data-i18n="gastroBox2Title">Plan redondo</h4>
+          <p data-i18n="gastroBox2Text">Comida frente al mar + paseo largo + helado o café al atardecer.</p>
+        </div>
+        <div class="mini">
+          <h4 data-i18n="gastroBox3Title">Truco local</h4>
+          <p data-i18n="gastroBox3Text">Pide “para el centro” y prueba varias cosas: se disfruta más.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ITINERARIES -->
+    <section id="itineraries" class="section-head">
+      <h3 data-i18n="itinTitle">Itinerarios recomendados</h3>
+      <p data-i18n="itinIntro">Tres planes para aprovechar el día según tu ritmo.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h4 data-i18n="itin1Title">Plan 1 · “Lo esencial” (4–6 horas)</h4>
+        <ol class="steps">
+          <li data-i18n="itin1S1">Cueva del Tesoro por la mañana (mejor con tiempo).</li>
+          <li data-i18n="itin1S2">Paseo marítimo para abrir apetito.</li>
+          <li data-i18n="itin1S3">Comida marinera con vistas.</li>
+          <li data-i18n="itin1S4">Atardecer por El Cantal (miradores y fotos).</li>
+        </ol>
+      </article>
+
+      <article class="card">
+        <h4 data-i18n="itin2Title">Plan 2 · “Cultura + playa” (día completo)</h4>
+        <ol class="steps">
+          <li data-i18n="itin2S1">Bezmiliana (patrimonio y exposiciones).</li>
+          <li data-i18n="itin2S2">Cueva del Tesoro y entorno.</li>
+          <li data-i18n="itin2S3">Playa por la tarde y paseo sin reloj.</li>
+          <li data-i18n="itin2S4">Cena frente al mar (mejor al caer la luz).</li>
+        </ol>
+      </article>
+
+      <article class="card">
+        <h4 data-i18n="itin3Title">Plan 3 · “Relax total” (sin prisas)</h4>
+        <ol class="steps">
+          <li data-i18n="itin3S1">Mañana de playa y baño.</li>
+          <li data-i18n="itin3S2">Comida larga y sobremesa.</li>
+          <li data-i18n="itin3S3">Paseo, helado y fotos.</li>
+          <li data-i18n="itin3S4">Una visita cultural corta (Bezmiliana) si apetece.</li>
+        </ol>
+      </article>
+
+      <article class="card">
+        <h4 data-i18n="itin4Title">Si viajas con niños</h4>
+        <p data-i18n="itin4P1">
+          El combo que mejor funciona suele ser: cueva (les encanta), paseo con paradas, y playa sin plan “cerrado”.
+        </p>
+        <ul>
+          <li data-i18n="itin4Li1">Lleva agua y algo para picar (la emoción de la cueva abre el hambre).</li>
+          <li data-i18n="itin4Li2">Mejor horarios de menos calor para caminar.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- TIPS -->
+    <section id="tips" class="card">
+      <h3 data-i18n="tipsTitle">Consejos para disfrutar más</h3>
+      <div class="grid" style="margin-top:12px">
+        <div>
+          <h4 data-i18n="tipsA1Title">Mejor hora</h4>
+          <p data-i18n="tipsA1Text">Atardecer para fotos y ambiente; mañana para cuevas y paseos con menos calor.</p>
+        </div>
+        <div>
+          <h4 data-i18n="tipsA2Title">Qué llevar</h4>
+          <p data-i18n="tipsA2Text">Capa ligera para la cueva, calzado cómodo y batería extra si eres de fotos.</p>
+        </div>
+        <div>
+          <h4 data-i18n="tipsA3Title">Ritmo</h4>
+          <p data-i18n="tipsA3Text">Plan corto + pausas largas: aquí el truco es no correr.</p>
+        </div>
+        <div>
+          <h4 data-i18n="tipsA4Title">Pequeña estrategia</h4>
+          <p data-i18n="tipsA4Text">Haz cultura antes de la comida; la tarde queda para playa y paseo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- OTHER -->
+    <section id="other" class="card">
+      <h3 data-i18n="otherTitle">Otros lugares de interés</h3>
+      <p class="muted" data-i18n="otherIntro">
+        Si te quedas más de un día, estos puntos completan la visita con miradores, rutas cortas y pequeños hallazgos culturales.
+      </p>
+
+      <div class="poi">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Torre_de_El_Cantal.jpg"
+          alt="Torre de El Cantal"
+          loading="lazy"
+        />
+          <div>
+            <h4 data-i18n="otherA1">Torre vigía de El Cantal y acantilados</h4>
+            <p data-i18n="otherA1Text">Buen paseo con miradores y una torre defensiva, ideal al atardecer...</p>
+            <p class="meta"><a href="https://www.google.com/maps?q=Torre+de+El+Cantal+Rinc%C3%B3n+de+la+Victoria" target="_blank" rel="noopener" data-i18n="openMap">Abrir mapa</a></p>
+          </div>
+      </div>
+
+        <div class="poi">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/8/85/Villa_romana_antiopa_rincon_de_la_victoria.jpg"
+            alt="Villa Antiopa"
+            loading="lazy"
+          />
+          <div>
+            <h4 data-i18n="otherA2">Villa Antiopa (Torre de Benagalbón)</h4>
+            <p data-i18n="otherA2Text">Restos romanos que suman un punto histórico extra...</p>
+            <p class="meta"><a href="https://www.google.com/maps?q=Villa+Antiopa+Rinc%C3%B3n+de+la+Victoria" target="_blank" rel="noopener" data-i18n="openMap">Abrir mapa</a></p>
+          </div>
+        </div>
+
+        <div class="poi">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Playa_del_Rinc%C3%B3n_de_la_Victoria.jpg"
+            alt="Paseo marítimo del Rincón de la Victoria"
+            loading="lazy"
+          />
+          <div>
+            <h4 data-i18n="otherA3">Paseo marítimo y miradores</h4>
+            <p data-i18n="otherA3Text">El plan comodín: caminar sin objetivo...</p>
+          </div>
+        </div>
+
+        <div class="poi">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Benagalbon.jpg"
+            alt="Benagalbón"
+            loading="lazy"
+          />
+          <div>
+            <h4 data-i18n="otherA4">Benagalbón con calma</h4>
+            <p data-i18n="otherA4Text">Para un aire más tranquilo: un paseo...</p>
+          </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card contact">
+      <h3 data-i18n="contactTitle">Contratar una visita</h3>
+      <p data-i18n="contactText">
+        Escríbenos por WhatsApp y cuéntanos cuántas personas sois, el día y el estilo de plan que queréis (relax, cultural, familiar o foto).
+      </p>
+      <div class="contact-actions">
+        <a class="btn" href="https://wa.me/" target="_blank" rel="noopener" data-i18n="waBtn">WhatsApp</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <img class="footer-logo" src="assets/logo-grande.png" alt="Logo" />
+        <p class="footer-text" data-i18n="footerText">Rincón de la Victoria · ES / EN / FR</p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // --- Accordion (Ver más) ---
+    document.querySelectorAll(".acc-btn").forEach(btn=>{
+      btn.addEventListener("click", ()=>{
+        const id = btn.getAttribute("aria-controls");
+        const panel = document.getElementById(id);
+        const open = btn.getAttribute("aria-expanded") === "true";
+
+        document.querySelectorAll(".acc-btn").forEach(b=>{
+          if(b !== btn){
+            b.setAttribute("aria-expanded","false");
+            const p = document.getElementById(b.getAttribute("aria-controls"));
+            if(p) p.hidden = true;
+          }
+        });
+
+        btn.setAttribute("aria-expanded", String(!open));
+        panel.hidden = open;
+      });
+    });
+
+    // --- i18n (ES/EN/FR) ---
+    const dict = {
+      es: {
+        brandKicker:"Guía de viaje",
+        brandTitle:"Rincón de la Victoria",
+        brandSubtitle:"Historia, cultura y lugares imprescindibles",
+
+        navGeneral:"General",
+        navHistory:"Historia",
+        navPeople:"Célebres",
+        navAttractions:"Atracciones",
+        navGastro:"Gastronomía",
+        navItin:"Itinerarios",
+        navTips:"Consejos",
+        navOther:"Otros",
+        navContact:"Contratar visita",
+
+        heroPill:"Costa del Sol · Málaga",
+        heroTitle:"Playas, cuevas legendarias y patrimonio defensivo",
+        heroText:"A pocos minutos de Málaga, Rincón de la Victoria mezcla brisa marina y paseos fáciles con planes distintos: una cueva de origen marino, una fortaleza del siglo XVIII, barrios con sabor local y atardeceres que se disfrutan sin prisa.",
+        heroH1Title:"Imprescindible",
+        heroH1Text:"Cueva del Tesoro + paseo por El Cantal",
+        heroH2Title:"Cultural",
+        heroH2Text:"Bezmiliana y su agenda de exposiciones",
+        heroH3Title:"Sabor",
+        heroH3Text:"Pescaito, espetos y helado frente al mar",
+        heroBtn:"Ver atracciones",
+        heroBtn2:"Contratar visita",
+        heroBtn3:"Ver itinerarios",
+        heroCap:"Playa del Rincón de la Victoria (Wikimedia Commons).",
+
+        generalTitle:"Información general",
+        generalText1:"Rincón de la Victoria es un municipio costero de la provincia de Málaga, en la comarca de la Axarquía. Está formado por varios núcleos (Rincón, La Cala del Moral, Benagalbón y Torre de Benagalbón), cada uno con su carácter: zonas de playa muy cómodas, rincones más tranquilos y pequeñas joyas patrimoniales.",
+        generalText2:"Es ideal para una escapada “sin complicaciones”: playas amplias, paseo marítimo para caminar o ir en bici, miradores, y planes culturales que se pueden encadenar con un buen almuerzo junto al mar.",
+        generalBox1Title:"Ambiente",
+        generalBox1Text:"Costero y cercano, con vida todo el año y tardes de paseo.",
+        generalBox2Title:"Plan típico",
+        generalBox2Text:"Mañana cultural, comida marinera y atardecer en los acantilados.",
+        generalBox3Title:"Para quién",
+        generalBox3Text:"Parejas, familias, amantes de la foto, y quien quiera mar sin prisas.",
+
+        historyTitle:"Referencias históricas",
+        historyP1:"La costa malagueña ha sido un lugar estratégico: rutas marítimas, vigilancia del litoral y defensa frente a incursiones. Ese contexto explica la presencia de torres vigía y fortificaciones, además del papel de los asentamientos cercanos.",
+        historyLi1:"Bezmiliana es un nombre histórico ligado al territorio y al poblamiento local.",
+        historyLi2:"La defensa costera se reforzó en época moderna con torres y fortificaciones para controlar el litoral.",
+        historyLi3:"El conjunto de cuevas del municipio aporta un gran valor arqueológico y científico.",
+        historyP2:"Hoy ese pasado se vive en clave de paseo: miradores, arquitectura defensiva, cultura local y rutas cortas muy agradecidas.",
+
+        peopleTitle:"Personajes célebres",
+        peopleP1:"Además de su atractivo turístico, el municipio ha visto nacer figuras conocidas en música, deporte y vida pública.",
+        peopleLi1:"<strong>El Koala</strong>: cantante español conocido por “Opá, yo viazé un corrá”.",
+        peopleLi2:"<strong>Francisco Salado</strong>: político nacido en el municipio.",
+        peopleLi3:"<strong>Andrés Caro</strong>: futbolista nacido en Rincón de la Victoria.",
+        peopleQuote:"“Lo mejor del Rincón es que puedes hacer un plan completo en pocas horas: cueva, cultura, playa y una cena mirando al mar.”",
+
+        attrTitle:"Atracciones",
+        attrIntro:"Pulsa “Ver más” para abrir el desplegable con foto, información y datos curiosos.",
+        openMap:"Abrir mapa",
+        seeMore:"Ver más",
+        moreInfoTitle:"Más información",
+        funFactsTitle:"Datos curiosos",
+        whyTitle:"Por qué merece la visita",
+
+        carmenTitle:"Virgen de Ntra. Sra. del Carmen",
+        carmenSub:"Tradición marinera y devoción local junto al litoral",
+        carmenMore1:"La Virgen del Carmen está profundamente vinculada a la vida marinera. En la Costa del Sol, su presencia se nota en el calendario y en la identidad del pueblo: la gente la siente “suya”, especialmente en verano.",
+        carmenMore2:"Visitar este punto es una forma rápida de conectar con la tradición local: es un plan breve, pero con mucha carga cultural, y combina muy bien con un paseo por el litoral y una comida en chiringuito.",
+        carmenWhy1:"Te acerca a la vida cotidiana del municipio: costumbres, símbolos y memoria colectiva.",
+        carmenWhy2:"Es una parada perfecta “entre planes”: corta, bonita y cerca del paseo marítimo.",
+        carmenFact1:"El 16 de julio suele ser la fecha más señalada en muchas localidades costeras.",
+        carmenFact2:"Es una de las devociones más extendidas en comunidades ligadas al mar.",
+        carmenFact3:"Si te gusta la foto: al atardecer, el contraste “negro + dorado” del cielo queda espectacular.",
+
+        tesoroTitle:"Cueva del Tesoro",
+        tesoroSub:"Geología, misterio y una visita muy diferente a la playa",
+        tesoroMore1:"La Cueva del Tesoro es uno de esos lugares que cambian el plan por completo: pasas del sol al frescor, del azul del mar a una atmósfera subterránea con pasajes y salas que invitan a imaginar historias.",
+        tesoroMore2:"Es una visita muy agradecida para familias y para quienes buscan algo distinto sin alejarse de la costa. Normalmente, la experiencia se complementa con un paseo posterior por el entorno y una parada para comer.",
+        tesoroWhy1:"Contraste perfecto con la playa: frescor, silencio y un paisaje “interior” muy fotogénico.",
+        tesoroWhy2:"Mezcla de ciencia y leyenda: ideal si te gustan las historias con misterio.",
+        tesoroFact1:"Se asocia a relatos populares sobre tesoros escondidos.",
+        tesoroFact2:"Su origen marino la hace distinta a muchas cuevas del interior.",
+        tesoroFact3:"Consejo de visitante: lleva una capa ligera incluso en verano por el cambio de temperatura.",
+
+        bezTitle:"Castillo Bezmiliana (Casa Fuerte)",
+        bezSub:"Historia defensiva y un espacio cultural con vida",
+        bezMore1:"La Casa Fuerte de Bezmiliana conecta con la historia de vigilancia del litoral. Su arquitectura “seria” recuerda que esta costa fue frontera y ruta; hoy, en cambio, es una parada tranquila para cultura y exposiciones.",
+        bezMore2:"Es un plan perfecto para equilibrar playa y patrimonio: entra, recorre con calma, y después continúa el día con paseo, helado o cena cerca del mar.",
+        bezWhy1:"Te aporta contexto histórico en 30–60 minutos, sin “romper” el ritmo de vacaciones.",
+        bezWhy2:"Suele tener programación cultural: exposiciones, actividades y vida local.",
+        bezFact1:"Se asocia a la estrategia defensiva del litoral en época moderna.",
+        bezFact2:"Su uso cultural actual la mantiene viva como punto de encuentro.",
+        bezFact3:"Si te gusta la arquitectura: fíjate en sus líneas sobrias y su sensación de fortaleza compacta.",
+
+        gastroTitle:"Gastronomía con vistas al mar",
+        gastroP1:"Aquí se viene con hambre (y con calma). Lo típico es combinar chiringuito y paseo, con platos marineros sencillos, bien hechos y con ese punto de “vacaciones” que sabe mejor mirando al Mediterráneo.",
+        gastroBox1Title:"Clásicos",
+        gastroBox1Text:"Pescaito frito, espetos y ensaladas frescas para compartir.",
+        gastroBox2Title:"Plan redondo",
+        gastroBox2Text:"Comida frente al mar + paseo largo + helado o café al atardecer.",
+        gastroBox3Title:"Truco local",
+        gastroBox3Text:"Pide “para el centro” y prueba varias cosas: se disfruta más.",
+
+        itinTitle:"Itinerarios recomendados",
+        itinIntro:"Tres planes para aprovechar el día según tu ritmo.",
+        itin1Title:"Plan 1 · “Lo esencial” (4–6 horas)",
+        itin1S1:"Cueva del Tesoro por la mañana (mejor con tiempo).",
+        itin1S2:"Paseo marítimo para abrir apetito.",
+        itin1S3:"Comida marinera con vistas.",
+        itin1S4:"Atardecer por El Cantal (miradores y fotos).",
+        itin2Title:"Plan 2 · “Cultura + playa” (día completo)",
+        itin2S1:"Bezmiliana (patrimonio y exposiciones).",
+        itin2S2:"Cueva del Tesoro y entorno.",
+        itin2S3:"Playa por la tarde y paseo sin reloj.",
+        itin2S4:"Cena frente al mar (mejor al caer la luz).",
+        itin3Title:"Plan 3 · “Relax total” (sin prisas)",
+        itin3S1:"Mañana de playa y baño.",
+        itin3S2:"Comida larga y sobremesa.",
+        itin3S3:"Paseo, helado y fotos.",
+        itin3S4:"Una visita cultural corta (Bezmiliana) si apetece.",
+        itin4Title:"Si viajas con niños",
+        itin4P1:"El combo que mejor funciona suele ser: cueva (les encanta), paseo con paradas, y playa sin plan “cerrado”.",
+        itin4Li1:"Lleva agua y algo para picar (la emoción de la cueva abre el hambre).",
+        itin4Li2:"Mejor horarios de menos calor para caminar.",
+
+        tipsTitle:"Consejos para disfrutar más",
+        tipsA1Title:"Mejor hora",
+        tipsA1Text:"Atardecer para fotos y ambiente; mañana para cuevas y paseos con menos calor.",
+        tipsA2Title:"Qué llevar",
+        tipsA2Text:"Capa ligera para la cueva, calzado cómodo y batería extra si eres de fotos.",
+        tipsA3Title:"Ritmo",
+        tipsA3Text:"Plan corto + pausas largas: aquí el truco es no correr.",
+        tipsA4Title:"Pequeña estrategia",
+        tipsA4Text:"Haz cultura antes de la comida; la tarde queda para playa y paseo.",
+
+        otherTitle:"Otros lugares de interés",
+        otherIntro:"Si te quedas más de un día, estos puntos completan la visita con miradores, rutas cortas y pequeños hallazgos culturales.",
+        otherA1:"Torre vigía de El Cantal y acantilados",
+        otherA1Text:"Buen paseo con miradores y una torre defensiva, ideal al atardecer. Es el típico lugar donde “solo ibas a dar una vuelta” y acabas quedándote más tiempo.",
+        otherA2:"Villa Antiopa (Torre de Benagalbón)",
+        otherA2Text:"Restos romanos que suman un punto histórico extra a la escapada. Perfecto si te gusta “ver capas” del pasado en un mismo lugar.",
+        otherA3:"Paseo marítimo y miradores",
+        otherA3Text:"El plan comodín: caminar sin objetivo, parar a mirar el mar, y dejar que el día se ordene solo.",
+        otherA4:"Benagalbón con calma",
+        otherA4Text:"Para un aire más tranquilo: un paseo, un café y ese punto “pueblo” que se agradece cuando quieres desconectar.",
+
+        contactTitle:"Contratar una visita",
+        contactText:"Escríbenos por WhatsApp y cuéntanos cuántas personas sois, el día y el estilo de plan que queréis (relax, cultural, familiar o foto).",
+        waBtn:"WhatsApp",
+        footerText:"Rincón de la Victoria · ES / EN / FR"
+      },
+
+      en: {
+        brandKicker:"Travel guide",
+        brandTitle:"Rincón de la Victoria",
+        brandSubtitle:"History, culture and must-see places",
+
+        navGeneral:"Overview",
+        navHistory:"History",
+        navPeople:"Notables",
+        navAttractions:"Attractions",
+        navGastro:"Food",
+        navItin:"Itineraries",
+        navTips:"Tips",
+        navOther:"More spots",
+        navContact:"Book a tour",
+
+        heroPill:"Costa del Sol · Málaga",
+        heroTitle:"Beaches, legendary caves and coastal heritage",
+        heroText:"Just minutes from Málaga, Rincón de la Victoria blends sea breeze and easy walks with varied plans: a marine-origin cave, an 18th-century fort, neighborhoods with local flavor, and sunsets you enjoy without rushing.",
+        heroH1Title:"Must-do",
+        heroH1Text:"Treasure Cave + El Cantal walk",
+        heroH2Title:"Culture",
+        heroH2Text:"Bezmiliana and exhibitions",
+        heroH3Title:"Taste",
+        heroH3Text:"Fried fish, skewers and gelato by the sea",
+        heroBtn:"See attractions",
+        heroBtn2:"Book a tour",
+        heroBtn3:"See itineraries",
+        heroCap:"Rincón de la Victoria beach (Wikimedia Commons).",
+
+        generalTitle:"Overview",
+        generalText1:"Rincón de la Victoria is a coastal municipality in Málaga province, in the Axarquía area. It’s made up of several neighborhoods (Rincón, La Cala del Moral, Benagalbón and Torre de Benagalbón), each with its own vibe: comfortable beaches, calmer corners and small heritage gems.",
+        generalText2:"Great for an easy getaway: wide beaches, a seafront promenade for walking or cycling, viewpoints, and cultural stops you can pair with a long lunch by the Mediterranean.",
+        generalBox1Title:"Vibe",
+        generalBox1Text:"Coastal and friendly, lively all year with evening strolls.",
+        generalBox2Title:"Typical day",
+        generalBox2Text:"Culture in the morning, seafood lunch, cliffs at sunset.",
+        generalBox3Title:"Perfect for",
+        generalBox3Text:"Couples, families, photo lovers, and anyone who likes slow sea time.",
+
+        historyTitle:"Historical notes",
+        historyP1:"This coast has long been strategic: sea routes, shoreline watchpoints and defense against incursions. That context explains watchtowers and fortifications, plus the role of nearby settlements.",
+        historyLi1:"Bezmiliana is a historic name tied to the local territory and settlement.",
+        historyLi2:"Coastal defense was strengthened in the modern era with watchtowers and fortifications.",
+        historyLi3:"Local caves add major archaeological and scientific value.",
+        historyP2:"Today, that past becomes a pleasant walk: viewpoints, defensive architecture, local culture and short rewarding routes.",
+
+        peopleTitle:"Notable people",
+        peopleP1:"Beyond tourism, the town is also the birthplace of well-known figures in music, sports and public life.",
+        peopleLi1:"<strong>El Koala</strong>: Spanish singer known for “Opá, yo viazé un corrá”.",
+        peopleLi2:"<strong>Francisco Salado</strong>: politician born in the municipality.",
+        peopleLi3:"<strong>Andrés Caro</strong>: footballer born in Rincón de la Victoria.",
+        peopleQuote:"“The best part is you can fit everything into a few hours: cave, culture, beach and dinner facing the sea.”",
+
+        attrTitle:"Attractions",
+        attrIntro:"Tap “See more” to open the dropdown with a photo, extra info and fun facts.",
+        openMap:"Open map",
+        seeMore:"See more",
+        moreInfoTitle:"More info",
+        funFactsTitle:"Fun facts",
+        whyTitle:"Why it’s worth it",
+
+        carmenTitle:"Our Lady of Carmen (Virgen del Carmen)",
+        carmenSub:"Seafaring tradition and local devotion by the shore",
+        carmenMore1:"This devotion is deeply linked to seafaring life. Along the Costa del Sol, it shapes the summer calendar and local identity—people feel it’s truly theirs.",
+        carmenMore2:"It’s a short stop with a strong cultural meaning, easy to combine with a seaside walk and a relaxed lunch nearby.",
+        carmenWhy1:"A quick way to connect with local customs and collective memory.",
+        carmenWhy2:"Perfect between plans: close, scenic, and near the promenade.",
+        carmenFact1:"July 16 is often the key date in many coastal towns.",
+        carmenFact2:"One of the most widespread devotions among sea-connected communities.",
+        carmenFact3:"Photo tip: sunset tones look incredible against the dark-gold palette.",
+
+        tesoroTitle:"Cueva del Tesoro (Treasure Cave)",
+        tesoroSub:"Geology, mystery, and a break from the beach",
+        tesoroMore1:"A place that instantly changes your day: from sun to cool air, from blue sea to a quiet underground atmosphere of passages and chambers.",
+        tesoroMore2:"A great visit for families and anyone who wants something different without leaving the coastline.",
+        tesoroWhy1:"The perfect contrast to the beach—fresh, quiet and photogenic.",
+        tesoroWhy2:"A mix of science and legend: ideal if you love mystery stories.",
+        tesoroFact1:"Often linked to popular tales of hidden treasure.",
+        tesoroFact2:"Its marine origin makes it unusual compared to inland caves.",
+        tesoroFact3:"Visitor tip: bring a light layer—even in summer.",
+
+        bezTitle:"Bezmiliana Castle (Casa Fuerte)",
+        bezSub:"Coastal defense history and a lively cultural venue",
+        bezMore1:"Its solid architecture recalls a coast that once needed watch and protection. Today it’s a calm stop for culture and exhibitions.",
+        bezMore2:"A perfect balance to beach time: visit, take it slow, then continue with a stroll and dinner by the sea.",
+        bezWhy1:"Gives you historical context in under an hour without disrupting your day.",
+        bezWhy2:"Often hosts exhibitions and cultural activities.",
+        bezFact1:"Part of the modern-era coastal defense strategy.",
+        bezFact2:"Its cultural use keeps it active as a meeting point.",
+        bezFact3:"Architecture tip: notice its compact, fortress-like feel.",
+
+        gastroTitle:"Food with sea views",
+        gastroP1:"Come hungry (and unhurried). The classic plan is a chiringuito lunch plus a long walk—simple seaside dishes that taste even better facing the Mediterranean.",
+        gastroBox1Title:"Classics",
+        gastroBox1Text:"Fried fish, skewers and fresh salads to share.",
+        gastroBox2Title:"Perfect combo",
+        gastroBox2Text:"Seafood lunch + long stroll + gelato or coffee at sunset.",
+        gastroBox3Title:"Local trick",
+        gastroBox3Text:"Order for the table and sample a few dishes.",
+
+        itinTitle:"Recommended itineraries",
+        itinIntro:"Three ways to enjoy the day depending on your pace.",
+        itin1Title:"Plan 1 · Essentials (4–6 hours)",
+        itin1S1:"Treasure Cave in the morning.",
+        itin1S2:"Promenade walk to build appetite.",
+        itin1S3:"Seafood lunch with views.",
+        itin1S4:"Sunset at El Cantal viewpoints.",
+        itin2Title:"Plan 2 · Culture + beach (full day)",
+        itin2S1:"Bezmiliana (heritage and exhibitions).",
+        itin2S2:"Treasure Cave and surroundings.",
+        itin2S3:"Beach afternoon, no rushing.",
+        itin2S4:"Dinner by the sea.",
+        itin3Title:"Plan 3 · Total relax",
+        itin3S1:"Beach morning and swim.",
+        itin3S2:"Long lunch and slow after-meal time.",
+        itin3S3:"Stroll, gelato and photos.",
+        itin3S4:"Short cultural stop (Bezmiliana) if you feel like it.",
+        itin4Title:"If you travel with kids",
+        itin4P1:"Best combo: cave (they love it), stroll with breaks, and flexible beach time.",
+        itin4Li1:"Bring water and a snack (the cave makes you hungry).",
+        itin4Li2:"Walk during cooler hours.",
+
+        tipsTitle:"Tips to enjoy more",
+        tipsA1Title:"Best time",
+        tipsA1Text:"Sunset for mood and photos; morning for caves and cooler walks.",
+        tipsA2Title:"What to bring",
+        tipsA2Text:"Light layer for the cave, comfy shoes, extra phone battery.",
+        tipsA3Title:"Pace",
+        tipsA3Text:"Short plans + long pauses: don’t rush here.",
+        tipsA4Title:"Small strategy",
+        tipsA4Text:"Do culture before lunch; keep afternoons for beach and strolls.",
+
+        otherTitle:"More places to see",
+        otherIntro:"If you stay longer than a day, these spots round out the trip with viewpoints and short routes.",
+        otherA1:"El Cantal watchtower and cliffs",
+        otherA1Text:"A great walk with viewpoints and a defensive tower—perfect at sunset. You’ll likely stay longer than planned.",
+        otherA2:"Villa Antiopa (Torre de Benagalbón)",
+        otherA2Text:"Roman remains that add an extra historical layer to the getaway.",
+        otherA3:"Seafront promenade and viewpoints",
+        otherA3Text:"The wildcard plan: walk, pause, watch the sea, and let the day settle.",
+        otherA4:"Benagalbón, slowly",
+        otherA4Text:"For a calmer village feel: a stroll, a coffee, and a real disconnect.",
+
+        contactTitle:"Book a tour",
+        contactText:"Message us on WhatsApp and tell us group size, date and the style you want (relax, culture, family or photo).",
+        waBtn:"WhatsApp",
+        footerText:"Rincón de la Victoria · ES / EN / FR"
+      },
+
+      fr: {
+        brandKicker:"Guide de voyage",
+        brandTitle:"Rincón de la Victoria",
+        brandSubtitle:"Histoire, culture et lieux incontournables",
+
+        navGeneral:"Aperçu",
+        navHistory:"Histoire",
+        navPeople:"Célébrités",
+        navAttractions:"Attractions",
+        navGastro:"Gastronomie",
+        navItin:"Itinéraires",
+        navTips:"Conseils",
+        navOther:"Autres",
+        navContact:"Réserver une visite",
+
+        heroPill:"Costa del Sol · Málaga",
+        heroTitle:"Plages, grottes légendaires et patrimoine côtier",
+        heroText:"À quelques minutes de Málaga, Rincón de la Victoria mêle brise marine et balades faciles avec des plans variés : une grotte d’origine marine, un fort du XVIIIe siècle, des quartiers au goût local et des couchers de soleil sans précipitation.",
+        heroH1Title:"Incontournable",
+        heroH1Text:"Grotte du Trésor + balade à El Cantal",
+        heroH2Title:"Culture",
+        heroH2Text:"Bezmiliana et ses expositions",
+        heroH3Title:"Saveurs",
+        heroH3Text:"Poisson frit, brochettes et glace face à la mer",
+        heroBtn:"Voir les attractions",
+        heroBtn2:"Réserver une visite",
+        heroBtn3:"Voir les itinéraires",
+        heroCap:"Plage de Rincón de la Victoria (Wikimedia Commons).",
+
+        generalTitle:"Aperçu",
+        generalText1:"Rincón de la Victoria est une commune côtière de la province de Málaga, dans l’Axarquía. Elle rassemble plusieurs noyaux (Rincón, La Cala del Moral, Benagalbón et Torre de Benagalbón), chacun avec son ambiance : plages confortables, coins plus calmes et petites pépites patrimoniales.",
+        generalText2:"Parfait pour une escapade simple : grandes plages, promenade en bord de mer, belvédères, et pauses culturelles à enchaîner avec un déjeuner tranquille face au Méditerranée.",
+        generalBox1Title:"Ambiance",
+        generalBox1Text:"Côtière et conviviale, animée toute l’année.",
+        generalBox2Title:"Journée type",
+        generalBox2Text:"Culture le matin, déjeuner marin, falaises au coucher du soleil.",
+        generalBox3Title:"Idéal pour",
+        generalBox3Text:"Couples, familles, amateurs de photo et de rythme doux.",
+
+        historyTitle:"Repères historiques",
+        historyP1:"Cette côte a longtemps été stratégique : routes maritimes, surveillance du littoral et défense. D’où la présence de tours de guet et de fortifications, ainsi que l’importance des implantations voisines.",
+        historyLi1:"Bezmiliana est un nom historique lié au territoire et au peuplement local.",
+        historyLi2:"La défense côtière a été renforcée à l’époque moderne avec tours et fortifications.",
+        historyLi3:"Les grottes locales ont une forte valeur archéologique et scientifique.",
+        historyP2:"Aujourd’hui, ce passé se découvre en douceur : belvédères, architecture défensive, culture locale et courtes balades très agréables.",
+
+        peopleTitle:"Personnalités",
+        peopleP1:"Au-delà du tourisme, la commune est aussi le berceau de figures connues (musique, sport, vie publique).",
+        peopleLi1:"<strong>El Koala</strong> : chanteur espagnol connu pour “Opá, yo viazé un corrá”.",
+        peopleLi2:"<strong>Francisco Salado</strong> : homme politique né dans la commune.",
+        peopleLi3:"<strong>Andrés Caro</strong> : footballeur né à Rincón de la Victoria.",
+        peopleQuote:"« Le mieux, c’est qu’on peut tout faire en quelques heures : grotte, culture, plage et dîner face à la mer. »",
+
+        attrTitle:"Attractions",
+        attrIntro:"Clique “Voir plus” pour ouvrir le panneau avec photo, infos et anecdotes.",
+        openMap:"Ouvrir la carte",
+        seeMore:"Voir plus",
+        moreInfoTitle:"Plus d’infos",
+        funFactsTitle:"Anecdotes",
+        whyTitle:"Pourquoi ça vaut le coup",
+
+        carmenTitle:"Vierge du Carmen (Virgen del Carmen)",
+        carmenSub:"Tradition maritime et dévotion locale au bord de l’eau",
+        carmenMore1:"Cette dévotion est très liée à la vie des marins. Sur la Costa del Sol, elle marque le calendrier estival et l’identité locale.",
+        carmenMore2:"Une halte courte mais pleine de sens, facile à combiner avec une balade et un déjeuner en bord de mer.",
+        carmenWhy1:"Connexion rapide aux coutumes et à la mémoire collective.",
+        carmenWhy2:"Parfait entre deux plans : proche, agréable, près de la promenade.",
+        carmenFact1:"Le 16 juillet est souvent la date clé dans de nombreuses villes côtières.",
+        carmenFact2:"Une des dévotions les plus répandues dans les communautés liées à la mer.",
+        carmenFact3:"Astuce photo : au coucher du soleil, le contraste noir-or est magnifique.",
+
+        tesoroTitle:"Cueva del Tesoro (Grotte du Trésor)",
+        tesoroSub:"Géologie, mystère et pause hors de la plage",
+        tesoroMore1:"Un lieu qui change instantanément l’ambiance : de la chaleur au frais, du bleu de la mer à une atmosphère souterraine.",
+        tesoroMore2:"Très agréable en famille et pour ceux qui veulent varier sans quitter la côte.",
+        tesoroWhy1:"Contraste parfait avec la plage : frais, calme, très photogénique.",
+        tesoroWhy2:"Un mélange science + légende, idéal si tu aimes les histoires mystérieuses.",
+        tesoroFact1:"Associée à des récits populaires de trésors cachés.",
+        tesoroFact2:"Son origine marine la distingue des grottes de l’intérieur.",
+        tesoroFact3:"Conseil : prends une petite veste légère, même en été.",
+
+        bezTitle:"Château de Bezmiliana (Casa Fuerte)",
+        bezSub:"Histoire défensive et lieu culturel vivant",
+        bezMore1:"Son architecture solide rappelle un littoral surveillé. Aujourd’hui, c’est un arrêt calme pour expositions et culture.",
+        bezMore2:"Idéal pour équilibrer plage et patrimoine : visite, balade, puis dîner face à la mer.",
+        bezWhy1:"Du contexte historique en moins d’une heure, sans casser la journée.",
+        bezWhy2:"Souvent des expositions et activités culturelles.",
+        bezFact1:"Liée à la stratégie de défense côtière à l’époque moderne.",
+        bezFact2:"Son usage culturel actuel en fait un lieu vivant.",
+        bezFact3:"Astuce architecture : observe son aspect compact, très “forteresse”.",
+
+        gastroTitle:"Gastronomie face à la mer",
+        gastroP1:"Ici, on mange avec plaisir et sans se presser : déjeuner en chiringuito, puis longue promenade. Des plats simples qui ont meilleur goût devant le Méditerranée.",
+        gastroBox1Title:"Classiques",
+        gastroBox1Text:"Poisson frit, brochettes et salades fraîches à partager.",
+        gastroBox2Title:"Combo parfait",
+        gastroBox2Text:"Déjeuner + balade + glace ou café au coucher du soleil.",
+        gastroBox3Title:"Truc local",
+        gastroBox3Text:"Commande à partager et goûte plusieurs plats.",
+
+        itinTitle:"Itinéraires conseillés",
+        itinIntro:"Trois façons de profiter selon ton rythme.",
+        itin1Title:"Plan 1 · Essentiel (4–6 h)",
+        itin1S1:"Grotte du Trésor le matin.",
+        itin1S2:"Promenade pour ouvrir l’appétit.",
+        itin1S3:"Déjeuner marin avec vue.",
+        itin1S4:"Coucher du soleil à El Cantal.",
+        itin2Title:"Plan 2 · Culture + plage (journée)",
+        itin2S1:"Bezmiliana (patrimoine et expositions).",
+        itin2S2:"Grotte du Trésor et alentours.",
+        itin2S3:"Plage l’après-midi, sans stress.",
+        itin2S4:"Dîner face à la mer.",
+        itin3Title:"Plan 3 · Relax total",
+        itin3S1:"Matin plage et baignade.",
+        itin3S2:"Déjeuner long et détente.",
+        itin3S3:"Balade, glace et photos.",
+        itin3S4:"Courte visite culturelle si envie.",
+        itin4Title:"Avec des enfants",
+        itin4P1:"Meilleur combo : grotte, balades avec pauses, puis plage flexible.",
+        itin4Li1:"Eau + petit encas (la grotte ouvre l’appétit).",
+        itin4Li2:"Marche aux heures plus fraîches.",
+
+        tipsTitle:"Conseils",
+        tipsA1Title:"Meilleure heure",
+        tipsA1Text:"Coucher du soleil pour l’ambiance; matin pour grottes et balades plus fraîches.",
+        tipsA2Title:"À emporter",
+        tipsA2Text:"Petite veste pour la grotte, chaussures confortables, batterie externe.",
+        tipsA3Title:"Rythme",
+        tipsA3Text:"Plans courts + pauses longues : ici, on ne court pas.",
+        tipsA4Title:"Petite stratégie",
+        tipsA4Text:"Culture avant le déjeuner; après-midi pour plage et promenade.",
+
+        otherTitle:"Autres lieux",
+        otherIntro:"Si tu restes plus d’un jour, ces points complètent la visite avec belvédères et petites balades.",
+        otherA1:"Tour de guet d’El Cantal et falaises",
+        otherA1Text:"Super balade avec belvédères, parfaite au coucher du soleil. Tu risques de rester plus longtemps que prévu.",
+        otherA2:"Villa Antiopa (Torre de Benagalbón)",
+        otherA2Text:"Vestiges romains qui ajoutent une couche historique au séjour.",
+        otherA3:"Promenade et belvédères",
+        otherA3Text:"Le plan joker : marcher, s’arrêter, regarder la mer, et laisser la journée se poser.",
+        otherA4:"Benagalbón, doucement",
+        otherA4Text:"Pour une ambiance plus tranquille : balade, café et vraie déconnexion.",
+
+        contactTitle:"Réserver une visite",
+        contactText:"Écris-nous sur WhatsApp : nombre de personnes, date et style de plan (relax, culture, famille ou photo).",
+        waBtn:"WhatsApp",
+        footerText:"Rincón de la Victoria · ES / EN / FR"
+      }
+    };
+
+    function setLang(lang){
+      document.documentElement.lang = lang;
+      document.querySelectorAll("[data-i18n]").forEach(el=>{
+        const key = el.getAttribute("data-i18n");
+        const val = dict[lang]?.[key];
+        if (val !== undefined) el.innerHTML = val;
+      });
+      localStorage.setItem("lang", lang);
+    }
+
+    const sel = document.getElementById("lang");
+    const saved = localStorage.getItem("lang") || "es";
+    sel.value = saved;
+    setLang(saved);
+    sel.addEventListener("change", e => setLang(e.target.value));
+  </script>
+</body>
+</html>
