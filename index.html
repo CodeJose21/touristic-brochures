@@ -10,40 +10,50 @@
 
 <body>
   <header class="site-header">
-    <div class="container header-row">
-      <div class="brand">
-        <img class="brand-logo" src="assets/logo-cabecera.png" alt="Rincón de la Victoria" />
-        <div>
-          <p class="kicker" data-i18n="brandKicker">Guía de viaje</p>
-          <h1 data-i18n="brandTitle">Rincón de la Victoria</h1>
-          <p class="subtitle" data-i18n="brandSubtitle">Historia, cultura y lugares imprescindibles</p>
-        </div>
-      </div>
-
-      <div class="tools">
-        <label class="sr-only" for="lang">Idioma</label>
-        <select id="lang">
-          <option value="es">Español</option>
-          <option value="en">English</option>
-          <option value="fr">Français</option>
-        </select>
+  <div class="container-header-row">
+    <div class="brand">
+      <img class="brand-logo" src="assets/logo-cabecera.png" alt="Rincón de la Victoria" />
+      <div>
+        <p class="kicker" data-i18n="brandKicker">Guía de viaje</p>
+        <h1 data-i18n="brandTitle">Rincón de la Victoria</h1>
+        <p class="subtitle" data-i18n="brandSubtitle">Historia, cultura y lugares imprescindibles</p>
       </div>
     </div>
+    
+    <nav class="site-nav" aria-label="Secciones">
+  <div class="container nav-row">
+    <a href="#general" data-i18n="navGeneral">General</a>
+    <a href="#history" data-i18n="navHistory">Historia</a>
+    <a href="#people" data-i18n="navPeople">Célebres</a>
+    <a href="#attractions" data-i18n="navAttractions">Atracciones</a>
+    <a href="#gastronomy" data-i18n="navGastro">Gastronomía</a>
+    <a href="#itineraries" data-i18n="navItin">Itinerarios</a>
+    <a href="#tips" data-i18n="navTips">Consejos</a>
+    <a href="#other" data-i18n="navOther">Otros</a>
+    <a href="#contact" class="cta" data-i18n="navContact">Contratar visita</a>
+  </div>
+</nav>
 
-    <nav class="site-nav">
-      <div class="container nav-row">
-        <a href="#general" data-i18n="navGeneral">General</a>
-        <a href="#history" data-i18n="navHistory">Historia</a>
-        <a href="#people" data-i18n="navPeople">Célebres</a>
-        <a href="#attractions" data-i18n="navAttractions">Atracciones</a>
-        <a href="#gastronomy" data-i18n="navGastro">Gastronomía</a>
-        <a href="#itineraries" data-i18n="navItin">Itinerarios</a>
-        <a href="#tips" data-i18n="navTips">Consejos</a>
-        <a href="#other" data-i18n="navOther">Otros</a>
-        <a href="#contact" class="cta" data-i18n="navContact">Contratar visita</a>
+    <div class="tools">
+      <span class="sr-only" id="lang-label">Idioma</span>
+
+      <div class="lang" id="lang" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="lang-label">
+        <button class="lang-btn" type="button" aria-controls="lang-list">
+          <span class="lang-value" data-lang-value>Español</span>
+          <span class="lang-chevron" aria-hidden="true"></span>
+        </button>
+
+        <ul class="lang-list" id="lang-list" role="listbox" tabindex="-1">
+          <li class="lang-opt" role="option" data-value="es" aria-selected="true">Español</li>
+          <li class="lang-opt" role="option" data-value="en" aria-selected="false">English</li>
+          <li class="lang-opt" role="option" data-value="fr" aria-selected="false">Français</li>
+        </ul>
       </div>
-    </nav>
-  </header>
+    </div>
+  </div>
+</header>
+
+
 
   <main class="container">
     <!-- HERO -->
@@ -86,6 +96,17 @@
         />
         <figcaption data-i18n="heroCap">Playa del Rincón de la Victoria.</figcaption>
       </figure>
+    </section>
+
+     <!-- CONTACT -->
+    <section id="contact" class="card-contact">
+      <h3 data-i18n="contactTitle">Contratar una visita</h3>
+      <p data-i18n="contactText">
+        Escríbenos por WhatsApp y cuéntanos cuántas personas sois, el día y el estilo de plan que queréis (relax, cultural, familiar o foto).
+      </p>
+      <div class="contact-actions">
+        <a class="btn" href="https://wa.me/qr/ZWXJXMBFZ3MQG1" target="_blank" rel="noopener" data-i18n="waBtn">WhatsApp</a>
+      </div>
     </section>
 
     <!-- GENERAL -->
@@ -502,17 +523,6 @@
             </p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="card contact">
-      <h3 data-i18n="contactTitle">Contratar una visita</h3>
-      <p data-i18n="contactText">
-        Escríbenos por WhatsApp y cuéntanos cuántas personas sois, el día y el estilo de plan que queréis (relax, cultural, familiar o foto).
-      </p>
-      <div class="contact-actions">
-        <a class="btn" href="https://wa.me/qr/ZWXJXMBFZ3MQG1" target="_blank" rel="noopener" data-i18n="waBtn">WhatsApp</a>
       </div>
     </section>
 
@@ -1010,7 +1020,69 @@
     const saved = localStorage.getItem("lang") || "es";
     sel.value = saved;
     setLang(saved);
-    sel.addEventListener("change", e => setLang(e.target.value));
   </script>
+
+  <script>
+  // ... tu código existente (accordion + i18n) arriba ...
+
+  // ===== Custom language dropdown =====
+  const langBox = document.getElementById("lang");
+  const langBtn = langBox.querySelector(".lang-btn");
+  const langList = langBox.querySelector(".lang-list");
+  const langValue = langBox.querySelector("[data-lang-value]");
+  const langOpts = Array.from(langBox.querySelectorAll(".lang-opt"));
+
+  function openLang(){
+    langBox.classList.add("is-open");
+    langBox.setAttribute("aria-expanded", "true");
+  }
+
+  function closeLang(){
+    langBox.classList.remove("is-open");
+    langBox.setAttribute("aria-expanded", "false");
+  }
+
+  function setSelected(value){
+    const opt = langOpts.find(o => o.dataset.value === value);
+    if(!opt) return;
+
+    // UI
+    langValue.textContent = opt.textContent;
+    langOpts.forEach(o => o.setAttribute("aria-selected", String(o.dataset.value === value)));
+
+    // i18n (tu función)
+    setLang(value);
+    localStorage.setItem("lang", value);
+
+    closeLang();
+  }
+
+  // Cargar idioma guardado
+  const savedLang = localStorage.getItem("lang") || "es";
+  setSelected(savedLang);
+
+  // Toggle
+  langBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    langBox.classList.contains("is-open") ? closeLang() : openLang();
+  });
+
+  // Click en opción
+  langOpts.forEach(opt => {
+    opt.addEventListener("click", (e) => {
+      e.stopPropagation();
+      setSelected(opt.dataset.value);
+    });
+  });
+
+  // Cerrar al clicar fuera
+  document.addEventListener("click", closeLang);
+
+  // Teclado (básico)
+  langBtn.addEventListener("keydown", (e) => {
+    if(e.key === "Escape") closeLang();
+    if(e.key === "ArrowDown") openLang();
+  });
+</script>
 </body>
 </html>
